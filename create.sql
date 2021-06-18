@@ -14,7 +14,7 @@ create table subjects(
     id serial PRIMARY KEY,
     name text
 );
-
+d
 create table books_subjects(
     book serial REFERENCES book(id),
     subject serial REFERENCES subjects(id)

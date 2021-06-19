@@ -1,0 +1,6 @@
+insert into publisher (name,country) values ('PHI', 'India')
+insert into publisher (name,country) values ('Harper', 'USA')
+insert into publisher (name,country) values ('GCP', 'USA')
+insert into publisher (name,country) values ('Avery', 'USA')
+insert into publisher (name,country) values ('Del Rey', 'UK')
+insert into publisher (name,country) values ('Vintage', 'UK')

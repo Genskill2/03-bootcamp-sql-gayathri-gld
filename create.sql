@@ -1,22 +1,21 @@
 create table publisher(
-    id INTEGER primary key,
-    name text,
-    country text
-);
+          id integer PRIMARY KEY,
+          name text,
+          country text
+          );
 
 create table books(
-    id integer PRIMARY KEY,
-    title text,
-    publisher serial REFERENCES publisher(id)
-);
-
+          id integer PRIMARY KEY,
+          title text,
+          publisher serial references publisher(id)
+          );
+          
 create table subjects(
-    id integer PRIMARY KEY,
-    name text
-);
-
+          id integer PRIMARY KEY,
+          name text
+          );
+          
 create table books_subjects(
-    book integer REFERENCES book(id),
-    subject integer REFERENCES subjects(id)
-);
-
+          book integer references books(id),
+          subject integer references subjects(id)
+          );
